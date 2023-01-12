@@ -1,0 +1,32 @@
+{
+  "name": "@interplanetary-lab/smartcontract-supervisor-js",
+  "description": "Useful toolbox for Interplanetary lab's smart contracts.",
+  "license": "MIT",
+  "version": "0.1.0",
+  "homepage": "https://github.com/interplanetary-lab/smartcontract-supervisor-js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/interplanetary-lab/smartcontract-supervisor-js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "yarn lint && tsc",
+    "lint": "eslint src"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.48.1",
+    "eslint": "^8.31.0",
+    "eslint-config-prettier": "^8.6.0",
+    "prettier": "^2.8.2",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "@typescript-eslint/parser": "^5.48.1",
+    "axios": "^1.2.2",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-simple-import-sort": "^8.0.0"
+  }
+}
