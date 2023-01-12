@@ -1,10 +1,5 @@
 # Smartcontract Supervisor JS
 
-[ethereum-image]: https://img.shields.io/badge/Ethereum-purple?logo=Ethereum
-[ethereum-url]: https://ethereum.org/fr/
-[solidity-image]: https://img.shields.io/badge/Solidity_v0.8-gray?logo=Solidity
-[solidity-url]: https://docs.soliditylang.org
-
 **Axios interaction with Smartcontract Supervisor's APIs.**
 
 ## Table of Contents
