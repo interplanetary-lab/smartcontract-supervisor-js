@@ -8,6 +8,8 @@ import {
   SupervisorWhitelistData,
 } from './types';
 
+export * from './types';
+
 /**
  * Object allowing to connect and interact with an instance of SmartContractSupervisor
  */
