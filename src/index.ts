@@ -35,12 +35,18 @@ export default class SmartContractSupervisor {
    *
    * @param address The address of the wallet
    * @param fields User fields object
+   * @param tags List of tags to add to the user
    * @returns
    */
-  async setUser(address: string, fields: SupervisorUserFields = {}) {
+  async setUser(
+    address: string,
+    fields: SupervisorUserFields = {},
+    tags?: string[],
+  ) {
     const response = await this.api.post(`/users`, {
       address,
       fields,
+      tags,
     });
     return !!response.data;
   }
@@ -52,6 +58,7 @@ export default class SmartContractSupervisor {
    * @param address
    * @param fields
    * @param signature_data
+   * @param tags List of tags to add to the user
    * @returns
    */
   async addWalletTo(
@@ -59,11 +66,13 @@ export default class SmartContractSupervisor {
     address: string,
     fields: SupervisorUserFields = {},
     signature_data: SupervisorSignatureCustomData = {},
+    tags?: string[],
   ) {
     const response = await this.api.post(`/whitelists/${whitelistId}`, {
       address,
       fields,
       signature_data,
+      tags,
     });
     return !!response.data;
   }
